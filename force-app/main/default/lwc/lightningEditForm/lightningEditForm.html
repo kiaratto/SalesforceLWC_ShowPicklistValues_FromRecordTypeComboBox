@@ -1,0 +1,33 @@
+<template>
+
+    <lightning-combobox
+        name="RecordType"
+        label="Record Types"
+        placeholder="Choose Your Record Type"
+        value={RecordTypesSelectedId}
+        onchange={onSelectRecordType}
+        options={RecordTypesOptionsList}>
+</lightning-combobox>
+<p>Selected option value: {RecordTypesSelectedId}</p>
+   
+    Dynamic
+    <lightning-record-edit-form object-api-name='MeuTeste__c' record-type-id='{RecordTypesSelectedId}' >
+        <lightning-input-field field-name='{Campo_Opa}'    ></lightning-input-field>
+        <lightning-input-field field-name='{Campo_Objetos}'   ></lightning-input-field>
+    </lightning-record-edit-form> 
+
+
+    On Hard Code
+    <!--RecordType1-->
+    <lightning-record-edit-form object-api-name='MeuTeste__c' record-type-id='0124P0000019OLAQA2' >
+        <lightning-input-field field-name='{Campo_Opa}'    ></lightning-input-field>
+        <lightning-input-field field-name='{Campo_Objetos}'   ></lightning-input-field>
+    </lightning-record-edit-form> 
+    Carros
+    <!--RecordType2-->
+    <lightning-record-edit-form object-api-name='MeuTeste__c' record-type-id='0124P0000019OL5QAM' >
+        <lightning-input-field field-name='{Campo_Opa}'    ></lightning-input-field>
+        <lightning-input-field field-name='{Campo_Objetos}'   ></lightning-input-field>
+    </lightning-record-edit-form> 
+
+</template>

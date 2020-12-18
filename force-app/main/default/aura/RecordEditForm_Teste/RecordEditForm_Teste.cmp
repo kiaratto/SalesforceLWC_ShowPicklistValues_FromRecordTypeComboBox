@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable,force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,lightning:isUrlAddressable,force:hasRecordId"
+ access="global" >
+
+    <lightning:recordEditForm aura:id="recordEditForm" objectApiName="MeuTeste__c" recordTypeId="0124P0000019OLAQA2" >
+        <lightning:messages />
+        <lightning:inputField fieldName="Opa__c" />
+        <lightning:inputField fieldName="Objetos__c" />
+        <lightning:button class="slds-m-top_small" type="submit" label="Create new" />
+    </lightning:recordEditForm>
+    Carros
+    <lightning:recordEditForm aura:id="recordEditForm" objectApiName="MeuTeste__c" recordTypeId="0124P0000019OL5QAM" >
+        <lightning:messages />
+        <lightning:inputField fieldName="Opa__c" />
+        <lightning:inputField fieldName="Objetos__c" />
+        <lightning:button class="slds-m-top_small" type="submit" label="Create new" />
+    </lightning:recordEditForm>
+
+</aura:component>	
